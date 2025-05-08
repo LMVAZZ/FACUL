@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Agendamento - Pet Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Agendamento de Tosa</h1>
+
+  <form action="#" method="post">
+    
+    <fieldset>
+      <legend>Dados do Endereço</legend>
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" name="rua" required>
+
+      <label for="numero">Número:</label>
+      <input type="text" id="numero" name="numero" required>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações do Cachorro</legend>
+      <label for="nomeCachorro">Nome do Cachorro:</label>
+      <input type="text" id="nomeCachorro" name="nomeCachorro" required>
+
+      <label for="porte">Porte:</label>
+      <select id="porte" name="porte" required>
+        <option value="">Selecione o porte</option>
+        <option value="pequeno">Pequeno</option>
+        <option value="medio">Médio</option>
+        <option value="grande">Grande</option>
+      </select>
+
+      <label for="tipoTosa">Tipo de Tosa:</label>
+      <select id="tipoTosa" name="tipoTosa" required>
+        <option value="">Selecione o tipo de tosa</option>
+        <option value="higienica">Higiênica</option>
+        <option value="completa">Completa</option>
+        <option value="verao">Verão</option>
+        <option value="inverno">Inverno</option>
+        <option value="padrao">Padrão da raça</option>
+      </select>
+
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Agendamento</legend>
+      <label for="diaSemana">Dia da Semana:</label>
+      <select id="diaSemana" name="diaSemana" required>
+        <option value="">Selecione um dia</option>
+        <option value="segunda">Segunda-feira</option>
+        <option value="terca">Terça-feira</option>
+        <option value="quarta">Quarta-feira</option>
+        <option value="quinta">Quinta-feira</option>
+        <option value="sexta">Sexta-feira</option>
+        <option value="sabado">Sábado</option>
+      </select>
+
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario" required>
+    </fieldset>
+
+    <button type="submit">Enviar Agendamento</button>
+
+  </form>
+
+</body>
+</html>
