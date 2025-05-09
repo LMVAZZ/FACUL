@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Front End</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #e91e63;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+      justify-content: space-between;
+    }
+
+    nav {
+      width: 20%;
+      padding: 10px;
+      background-color: #fce4ec;
+    }
+
+    nav a {
+      display: block;
+      background: #e91e63;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #d81b60;
+    }
+
+    main {
+      width: 60%;
+      padding: 10px;
+    }
+
+    main h2 {
+      border-bottom: 2px solid #e91e63;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    aside {
+      width: 18%;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .news {
+      margin-bottom: 20px;
+    }
+
+    .news h3 {
+      color: #e91e63;
+      margin: 0;
+    }
+
+    .news small {
+      font-size: 11px;
+      color: #888;
+    }
+
+    .news p {
+      font-size: 14px;
+    }
+
+    .news a {
+      color: #e91e63;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        order: 2;
+      }
+
+      main {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      aside {
+        width: 100%;
+        margin-top: 20px;
+        order: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Portal de Desenvolvimento Front End - Por Laura Vaz
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="https://github.com/LMVAZZ/FACUL" target="_blank">Documentação GitHub</a>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Documentação HTML</a>
+    </nav>
+
+    <main>
+      <h2>Título Principal</h2>
+      <p><em>Bem-vindo ao portal de estudos de Front End!</em></p>
+      <p>Aqui você encontra recursos, desafios, dicas e atividades para aprimorar suas habilidades com HTML, CSS, JavaScript e frameworks modernos como React e Vue.</p>
+
+      <h2>Minha Experiência com a Disciplina</h2>
+      <p>Como aluna, fui desafiada desde o início pela matéria, pois até então eu nunca havia tido nenhum contato com linguagens de programação. No começo, tudo era novo e um pouco confuso, mas a cada atividade proposta, fui conseguindo entender melhor os conceitos e desenvolver um raciocínio mais lógico e estruturado.</p>
+      <p>Ao longo do curso, percebi uma evolução não só técnica, mas também mental — aprendi a ser mais paciente, a pensar em soluções e a não desistir diante dos erros. Uma das maiores dificuldades que ainda enfrento é a inclusão e o posicionamento de imagens nas páginas, especialmente quando quero alinhar estética e funcionalidade.</p>
+      <p>Entre todas as atividades, a que mais gostei foi a criação do meu currículo online. Essa foi uma experiência prática, útil e que com certeza levarei adiante, pois pretendo mantê-lo atualizado e utilizá-lo como uma vitrine profissional.</p>
+    </main>
+
+    <aside>
+      <div class="news">
+        <h3><a href="https://github.com/LMVAZZ/FACUL/blob/main/CADASTRO%20CLIENTE%20%20-%20CURSO.html" target="_blank">Atividade de Formulário de Cadastro</a></h3>
+        <small>10h00 / 08.05</small>
+        <p>Este trabalho consiste em um formulário de cadastro de cliente, utilizando HTML e CSS para a estruturação e estilização.</p>
+      </div>
+      <div class="news">
+        <h3><a href="https://github.com/LMVAZZ/FACUL/blob/main/CVLMVAZZ.html" target="_blank">Meu Currículo Online</a></h3>
+        <small>12h00 / 08.05</small>
+        <p>Currículo online desenvolvido com HTML, CSS e uma estrutura simples, permitindo a personalização e atualização contínua.</p>
+      </div>
+      <div class="news">
+        <h3><a href="https://github.com/LMVAZZ/FACUL/blob/main/FORMUL%C3%81RIO%20DE%20AGENDAMENTO%20DE%20TOSA.html" target="_blank">Formulário de Agendamento de Tosa</a></h3>
+        <small>14h00 / 08.05</small>
+        <p>Formulário desenvolvido para agendamento de tosas em pets, com campos básicos de contato e data.</p>
+      </div>
+      <div class="news">
+        <h3><a href="https://github.com/LMVAZZ/FACUL/blob/main/Receita%20de%20Bolo%20de%20Caneca%20-%20Atividade%2001%2027.02.html" target="_blank">Receita de Bolo de Caneca - Atividade 01</a></h3>
+        <small>16h00 / 08.05</small>
+        <p>Atividade que apresenta uma receita de bolo de caneca, utilizando listas e instruções passo a passo.</p>
+      </div>
+      <div class="news">
+        <h3><a href="https://github.com/LMVAZZ/FACUL/blob/main/TABELA%20DE%20CURSOS.html" target="_blank">Criação de Tabelas</a></h3>
+        <small>18h00 / 08.05</small>
+        <p>Desenvolvimento de uma tabela para exibição de cursos, com utilização de elementos de tabelas HTML.</p>
+      </div>
+      <div class="news">
+        <h3><a href="https://github.com/LMVAZZ/FACUL/blob/main/Mural%20de%20C%C3%A3es%20Desaparecidos.html" target="_blank">Mural de Cães Desaparecidos</a></h3>
+        <small>20h00 / 08.05</small>
+        <p>Criação de um mural online para a divulgação de cães desaparecidos, com estrutura de lista e formulário de inserção de informações.</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <a href="https://github.com/LMVAZZ/FACUL" target="_blank">
+      Veja minhas atividades no GitHub
+    </a>
+  </footer>
+
+</body>
+</html>
